@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+      cursor: default;
+    }
+
+    /* Invisible clickable area */
+    #secret {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 77%;   /* change position */
+      left: 13%;  /* change position */
+      background-color: transparent;
+    }
+
+    #secret:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="secret" onclick="goNext()"></div>
+
+<script>
+  function goNext() {
+    window.location.href = "https://yournextsite.com";
+  }
+</script>
+
+</body>
+</html>
